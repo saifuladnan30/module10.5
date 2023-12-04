@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="/"><h2>Home</h2></a>
+            <a href="/about/"><h2>About</h2></a>
+            <a href="/contact/"><h2>Contact</h2></a>
+        </div>
+    </nav>
+    <h1>This is Home page</h1>
+    <section>
+        <h2>length: {{ name | length }}</h2>
+        <h2>add 2: {{ age | add:"2" }}</h2>
+        <h2>addslashes: {{ self | addslashes }}</h2>
+        <h2>capfirst: {{ self | capfirst }}</h2>
+        <h2>center 15: {{ name | center:"15" }}</h2>
+        <h2>cut: {{ name | cut:" " }}</h2>
+        <h2>date: {{ today | date:"D d M Y" }}</h2>
+        <h2>default: {{ nid | default:"nothing" }}</h2>
+        <h2>divisibleby: {{ age | divisibleby:"3" }}</h2>
+        <h2>filesizeformat: {{ about | filesizeformat }}</h2>
+        <h2>first: {{ name | first }}</h2>
+        <h2>join: {{ lst | join:" // " }}</h2>
+        <h2>last: {{ name | last }}</h2>
+        <h2>length: {{ lst | length }}</h2>
+        <h2>linenumbers: {{ lst | linenumbers }}</h2>
+        <h2>lower: {{ name | lower }}</h2>
+        <h2>make_list: {{ name | make_list }}</h2>
+        <h2>random: {{ lst | random }}</h2>
+        <h2>slice: {{ lst | slice:":2" }}</h2>
+        <h2>slugify: {{ name | slugify }}</h2>
+        <h2>time: {{ today | time:"H:i" }}</h2>
+        <h2>title: {{ self | title }}</h2>
+        <h2>unordered_list: {{ test | unordered_list }}</h2>
+        <h2>upper: {{ name | upper }}</h2>
+        <h2>wordcount: {{ name | wordcount }}</h2>
+        <h2>date: {{ today|date:"SHORT_DATE_FORMAT" }}</h2>
+        <h2>date: {{ today | date }}</h2>
+        <h2>truncatechars: {{ name | truncatechars:7 }}</h2>
+        <h2>wordcount: {{ name | wordcount }}</h2>
+        <h2>truncatewords: {{ about | truncatewords:3 }}</h2>
+        <h2>striptags: {{ name | striptags }}</h2>
+        <h2>num_messages: You have {{ message }} message{{ message | pluralize }}</h2>
+        <h2>num_messages: You have {{ message }} tomato{{ message | pluralize:"es" }}</h2>
+    </section>
+    
+</body>
+</html>
